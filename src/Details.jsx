@@ -65,7 +65,7 @@ const Details = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4" data-testid="detailtable">
-                    
+                    <div class="table-wrapper-scroll-y my-custom-scrollbar">
                         <Table className="table table-striped table-bordered table-sm" cellspacing="0">
                             <thead>
                             <tr>
@@ -91,11 +91,11 @@ const Details = () => {
                                 <Image data-testid="albumpicture" src={albumpic} alt="" fluid />
                                 <span id="idtext">Image ID: {id}</span>
                                 <br />
-                                <span>Title: {title}</span>
+                              <span><b>Title:</b> {title}</span>
                         </div>
                     </div>
                 </div>
-            
+            </div>
         </div>
 
     );
