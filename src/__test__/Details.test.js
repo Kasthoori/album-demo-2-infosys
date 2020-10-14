@@ -34,7 +34,7 @@ describe('Details Component', () => {
     //test case 02. number of divs in component
     test('number of div tags', () => {
         const wrapper = shallow(<Details />);
-        expect(wrapper.find('div').length).toBe(6);
+        expect(wrapper.find('div').length).toBe(7);
     });
 
     //test case 03. render detail table

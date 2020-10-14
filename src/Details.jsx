@@ -74,24 +74,25 @@ const Details = () => {
                             </thead>
                             <tbody>
                               
-                               <tr>
+                               
                                     <span data-testid="thumbnailimage">
                                       {tracks.map((track) => (
                                            <ListItemImg data-testid="listimglink" track={track} onclick={listItemImgOnClick} />
                                          ))}
                                       </span>
-                                </tr>
+                                
                             </tbody>
                         </Table>
                     </div>
                     </div>
                     <div className="col-md-8">
                         <div>
-                            <h2>Album ID: {albumId}</h2>
+                            <h2><b>Album ID: {albumId}</b></h2>
+                            <span id="idtext"><h3>Image ID: {id}</h3></span>
+                            <span><h4><b>Title:</b> {title}</h4></span>
+                            
                                 <Image data-testid="albumpicture" src={albumpic} alt="" fluid />
-                                <span id="idtext">Image ID: {id}</span>
-                                <br />
-                              <span><b>Title:</b> {title}</span>
+                              
                         </div>
                     </div>
                 </div>
